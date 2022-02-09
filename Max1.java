@@ -8,9 +8,9 @@ class Max1 {
 
 	@Test
 	void test() {
-		Maximum test = new Maximum(0, 0, 0);
-		 float output = test.testMax(5f, 4f, 3f);
-		 assertEquals(5, output);
+		Maximum test = new Maximum();
+		 String output = test.testMax("camel", "banana", "apple");
+		 assertEquals("camel", output);
 	}
 
 }

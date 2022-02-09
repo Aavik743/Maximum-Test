@@ -2,17 +2,21 @@ package javaGenerics;
 
 public class Maximum {
 	
-	float x, y, z;
+	String x, y, z;
 	
-	public Maximum(float x, float y, float z) {
+	public Maximum(String x, String y, String z) {
 		this.x = x;
 		this.y = y;
 		this.z = z;
 		
 	}
 	
-	public static float testMax (Float x, Float y, Float z) {
-		Float max = x;
+	public Maximum() {
+		
+	}
+
+	public static String testMax (String x, String y, String z) {
+		String max = x;
 		Maximum m = new Maximum(x, y, z);
 		if(y.compareTo(max) > 0) {
 			max = y;
@@ -26,7 +30,7 @@ public class Maximum {
 		
 	}
 	
-	public static void printMax(Float x,Float y,Float z,Float max) {
+	public static void printMax(String x,String y,String z,String max) {
 		System.out.printf("max of %s, %s and %s is %s\n",x,y,z,max);
 	}
 
@@ -34,7 +38,9 @@ public class Maximum {
 	
 	public static void main(String[] args) {
 		
-		Float x1 = 1.33f,y1 = 1.55f,z1 = 1.99f;
+		String x1 = "apple",y1 = "banana",z1 = "camel";
+		
+		
 		
 		testMax(x1, y1, z1);
 		
