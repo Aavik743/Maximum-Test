@@ -8,9 +8,13 @@ class Max1 {
 
 	@Test
 	void test() {
-		Maximum test = new Maximum();
-		 Comparable output = test.testMax("camel", "banana", "apple");
-		 assertEquals("camel", output);
+		 Generic test = new Generic();
+		 Comparable output1 = test.testMaximum("camel", "banana", "apple");
+		 Comparable output2 = test.testMaximum(9, 3, 5);
+		 Comparable output3 = test.testMaximum(1.99, 1.33, 1.55);
+		 assertEquals("camel", output1);
+		 assertEquals(9, output2);
+		 assertEquals(1.99, output3);
 	}
 
 }
