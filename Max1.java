@@ -9,7 +9,7 @@ class Max1 {
 	@Test
 	void test() {
 		Maximum test = new Maximum();
-		 String output = test.testMax("camel", "banana", "apple");
+		 Comparable output = test.testMax("camel", "banana", "apple");
 		 assertEquals("camel", output);
 	}
 
