@@ -25,7 +25,7 @@ public class Generic<E extends Comparable<E>> {
 		return values[values.length - 1];
 	}	
 	
-	public void printMax(E x,E y,E z,E max) {
+	public static <E extends Comparable<E>> void printMax(E x,E y,E z,E max) {
 		System.out.printf("max of %s, %s and %s is %s\n",x,y,z,max);
 	}
 	
